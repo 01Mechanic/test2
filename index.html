@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zone</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px" class="baise">--侧边栏--</div>
+    <!--主区域-->
+    <div class="flex1 flex column">
+      <!--头部栏-->
+      <div style="height: 60px" class="baise">
+        --头部栏--
+        <embed src="Kuduro.mp3" width="80px" height="80px"></embed>
+      </div>
+      <!--内容区-->
+      <div class="flex1 flex">
+        <!--左区-->
+        <div style="flex: 3" class="flex column mg8">
+          <!--数据区-->
+          <div style="flex: 1" class="flex">
+            <!--数据1区-->
+            <div class="flex1 baise mgr8">--数据1区--</div>
+            <!--数据2区-->
+            <div class="flex1 baise mgr8">--数据2区--</div>
+            <!--数据3区-->
+            <div class="flex1 baise mgr8">--数据3区--</div>
+            <!--数据4区-->
+            <div class="flex1 baise">--数据4区--</div>
+          </div>
+          <!--列表区-->
+          <div style="flex: 3" class="flex column">
+            <!--列表1区-->
+            <div class="flex1 baise mgt8">--列表1区--</div>
+            <!--列表2区-->
+            <div class="flex1 baise mgt8">--列表2区--</div>
+            <!--列表3区-->
+            <div class="flex1 baise mgt8">--列表3区--</div>
+          </div>
+        </div>
+        <!--右区-->
+        <div class="flex1 flex column mgr8 mgt8">
+          <!--提示区-->
+          <div
+            class="flex1 baise flex column"
+            style="justify-content: center; align-items: center"
+          >
+            <img src="s11.png" width="200px" />
+            <div>王者段位</div>
+          </div>
+          <!--消息区-->
+          <div class="flex1 mgt8 baise flex column" style="align-items: center">
+            <img src="max01.png" width="200px" />
+            <div>专属logo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
